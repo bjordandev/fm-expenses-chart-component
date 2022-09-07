@@ -6,15 +6,16 @@
     
     --c-neutral-darkbrown:hsl(25, 47%, 15%);
     --c-neutral-mediumbrown:hsl(28, 10%, 53%);
-    --c-cream:hsl(27, 66%, 92%);
-    --c-verypaleorange:hsl(33, 100%, 98%);
+    --c-neutral-cream:hsl(27, 66%, 92%);
+    --c-neutral-verypaleorange:hsl(33, 100%, 98%);
+
     --money-symbol:"$";
 }
 
 body {
     font-size: 18px;
     font-family: 'DM Sans', sans-serif;
-    background-color: var(--c-cream);
+    background-color: var(--c-neutral-cream);
 }
 
 .main {
@@ -37,7 +38,7 @@ body {
 }
 
 .main__balanceTitle {
-    color:var(--c-verypaleorange);
+    color:var(--c-neutral-verypaleorange);
 }
 
 .main__balanceTitle {
@@ -61,11 +62,11 @@ body {
 }
 
 .price--clear {
-    color:var(--c-verypaleorange);
+    color:var(--c-neutral-verypaleorange);
 }
 
 .dashboard {
-    background-color:var(--c-verypaleorange);
+    background-color:var(--c-neutral-verypaleorange);
     padding: 30px 20px; 
     border-radius:6px;
 }
@@ -85,7 +86,7 @@ body {
     display:block;
     width:100%;
     height:2px;
-    background-color: var(--c-cream);
+    background-color: var(--c-neutral-cream);
     margin-bottom:25px;
 }
 
@@ -150,7 +151,7 @@ body {
     left:50%;
     transform:translate(-50%, calc(-100% - 5px));
     background-color:var(--c-neutral-darkbrown);
-    color:var(--c-verypaleorange);
+    color:var(--c-neutral-verypaleorange);
     padding:8px;
     border-radius:4px;
     font-size:12px;
@@ -183,7 +184,7 @@ body {
     /* COMPONENTS */
 
     .dashboard {
-        background-color:var(--c-verypaleorange);
+        background-color:var(--c-neutral-verypaleorange);
         padding: 40px 40px; 
         border-radius:12px;
     }
