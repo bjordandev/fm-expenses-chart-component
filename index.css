@@ -13,6 +13,17 @@ body {
     background-color: var(--c-cream);
 }
 
+.main {
+    --margin-center:15px;
+
+    width:calc(100% - var(--margin-center) - var(--margin-center));
+    max-width:540px;
+    margin: 0 auto;
+    margin-top:66px;
+}
+
 @media screen and (min-width:1339px) {
-    
+    .main {
+        margin-top:180px;
+    }
 }
