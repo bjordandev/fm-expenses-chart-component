@@ -11,3 +11,7 @@ body {
     font-size: 18px;
     font-family: 'DM Sans', sans-serif;
 }
+
+@media screen and (min-width:1339px) {
+    
+}
