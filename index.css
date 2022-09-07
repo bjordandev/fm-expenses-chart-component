@@ -6,3 +6,8 @@
     --c-cream:hsl(27, 66%, 92%);
     --c-verypaleorange:hsl(33, 100%, 98%);
 }
+
+body {
+    font-size: 18px;
+    font-family: 'DM Sans', sans-serif;
+}
