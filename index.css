@@ -1,0 +1,8 @@
+:root {
+    --c-primary-red:hsl(10, 79%, 65%);
+    --c-primary-cyan:hsl(186, 34%, 60%);
+    --c-neutral-darkbrown:hsl(25, 47%, 15%);
+    --c-neutral-mediumbrown:hsl(28, 10%, 53%);
+    --c-cream:hsl(27, 66%, 92%);
+    --c-verypaleorange:hsl(33, 100%, 98%);
+}
