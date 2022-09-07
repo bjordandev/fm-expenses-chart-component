@@ -81,6 +81,14 @@ body {
     margin-bottom:50px;
 }
 
+.dashboard__line {
+    display:block;
+    width:100%;
+    height:2px;
+    background-color: var(--c-cream);
+    margin-bottom:25px;
+}
+
 .barchar {
     display:flex;
     align-items: flex-end;
