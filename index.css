@@ -171,7 +171,7 @@ body {
     background-color: var(--c-primary-cyan);
 }
 
-@media screen and (min-width:1339px) {
+@media screen and (min-width:600px) {
     .main {
         margin-top:180px;
     }
