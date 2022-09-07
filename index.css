@@ -5,6 +5,7 @@
     --c-neutral-mediumbrown:hsl(28, 10%, 53%);
     --c-cream:hsl(27, 66%, 92%);
     --c-verypaleorange:hsl(33, 100%, 98%);
+    --money-symbol:"$";
 }
 
 body {
@@ -22,8 +23,50 @@ body {
     margin-top:66px;
 }
 
+.main__header {
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color:var(--c-primary-red);
+    border-radius:6px;
+    padding: 20px 22px;
+    margin-bottom:20px;
+}
+
+.main__balanceTitle {
+    color:var(--c-verypaleorange);
+}
+
+.main__balanceTitle {
+    font-weight: 100;
+    font-size:16px;
+    margin-bottom:10px;
+}
+
+.price--medium {
+    font-size:28px;
+}
+
+/* COMPONENTS */
+.price {
+    font-weight: 700;  
+}
+
+.price::before {
+    content:var(--money-symbol);
+    text-transform:uppercase;
+}
+
+.price--clear {
+    color:var(--c-verypaleorange);
+}
+
 @media screen and (min-width:1339px) {
     .main {
         margin-top:180px;
+    }
+
+    .main__header {
+        border-radius:10px;
     }
 }
