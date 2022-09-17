@@ -47,9 +47,6 @@ body {
     margin-bottom:10px;
 }
 
-.price--medium {
-    font-size:28px;
-}
 
 /* COMPONENTS */
 .price {
@@ -63,6 +60,14 @@ body {
 
 .price--clear {
     color:var(--c-neutral-verypaleorange);
+}
+
+.price--big {
+    font-size:26px;
+}
+
+.price--medium {
+    font-size:28px;
 }
 
 .dashboard {
@@ -88,6 +93,38 @@ body {
     height:2px;
     background-color: var(--c-neutral-cream);
     margin-bottom:25px;
+}
+
+.dashboard__footer {
+    display:flex;
+    justify-content: space-between;
+}
+
+.dashboard__monthTitle {
+    margin-bottom: 12px;
+    font-size:16px;
+    color:var(--c-neutral-mediumbrown);
+}
+
+.dashboard__evolution {
+    align-self: flex-end;
+}
+
+.dashboard__percentageEvolution {
+    display:block;
+    font-weight:700;
+    margin-bottom:12px;
+    text-align: right;
+}
+
+.dashboard__percentageEvolution::after {
+    content:"%"
+}
+
+
+.dashboard__lastMonth {
+    font-size:16px;
+    color:var(--c-neutral-mediumbrown);
 }
 
 .barchar {
@@ -183,6 +220,10 @@ body {
 
     /* COMPONENTS */
 
+    .price--big {
+        font-size:50px;
+    }
+
     .dashboard {
         background-color:var(--c-neutral-verypaleorange);
         padding: 40px 40px; 
@@ -197,5 +238,9 @@ body {
     .barchar__bar {
         flex-basis:50px;
         border-radius:6px;
+    }
+
+    .dashboard__monthTitle {
+        margin-bottom: 15px;
     }
 }
