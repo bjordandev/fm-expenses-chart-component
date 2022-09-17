@@ -36,23 +36,32 @@ addEventListener('DOMContentLoaded', (domContentLoadedEvent) => {
         return value * scaleRatio; 
     } 
       
+    function getTodayBar(data) {
+        const dayNumber = new Date().getDay();
+        const todayIndex = dayNumber > 0 ? dayNumber - 1 : dayNumber;
+        const today = data[todayIndex].day;
+        const bar = document.querySelector(`.barchar__bar[data-key="${today}"]`);
+        return bar;
+    }
     
     getAmountsPerDay().then(data => {
         // Get maximum amount to calculate scaleRatio
+
+        const todayBarElement = getTodayBar(data);
+        todayBarElement.classList.add("barchar--today");
 
         const { amount:max } = data.reduce((max, value) => {
             if (value.amount >= max.amount) return value;
             return max; 
         });
-        
-        
+
         for (let i = 0 ; i < data.length ; i++) {
             const { day, amount } = data[i];
 
             const newBarCharHeight = normalizeValue(amount, max, barcharHeight);
             const barElement = document.querySelector(`.barchar__bar[data-key="${day}"]`);
-
             setBarPrice(barElement, amount);
+
 
             // Delayed Transitions
             const id = setTimeout(() => {
